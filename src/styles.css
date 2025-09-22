@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc; /* A very light gray background */
+  margin: 0;
+  padding: 0;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.logo-container img {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.logo-container img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Enhanced job cards */
+.job-card {
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Clean backgrounds */
+.min-h-screen {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+/* Mobile menu transition */
+#mobile-menu {
+  transition: transform 0.3s ease-in-out;
+}
